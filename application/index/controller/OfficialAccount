@@ -1,0 +1,22 @@
+<?php
+namespace app\index\controller;
+use EasyWeChat\Factory;
+//公众号
+class Payment extends Common
+{
+    public function index()
+    {
+    	$config = $this->getConfig('fanxin');
+    	// $app = Factory::payment($this->config);
+    	var_dump($config);
+    }
+
+    public function getApp($merchantName)
+    {
+    	$config = $this->getConfig($merchantName);
+    	return Factory::officialAccount($this->config);
+    }
+
+
+    
+}

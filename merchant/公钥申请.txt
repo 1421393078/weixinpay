@@ -1,0 +1,6 @@
+进入到  E:\www\tp5.0\vendor\bin 内
+输入 easywechat payment:rsa_public_key 
+  >  --mch_id=商户ID \
+  >  --api_key=商户API key \
+  >  --cert_path=证书文件路径
+  >  --key_path=私钥文件路径
